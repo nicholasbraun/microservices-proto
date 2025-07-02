@@ -1,6 +1,6 @@
 module github.com/huseyinbabal/microservices-proto/golang
 
-go 1.17
+go 1.24.2
 
 require (
 	google.golang.org/grpc v1.43.0
