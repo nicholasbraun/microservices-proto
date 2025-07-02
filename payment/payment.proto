@@ -9,6 +9,7 @@ message CreatePaymentRequest {
     int64 something = 4;
     int64 something_else = 5;
     int64 foo_bar = 6;
+    int64 baz = 7;
 }
 
 message CreatePaymentResponse {
