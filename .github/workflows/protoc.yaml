@@ -8,6 +8,7 @@ jobs:
     name: "Generate"
     runs-on: ubuntu-latest
     strategy:
+      max-parallel: 1
       matrix:
         service: ["order", "payment", "shipping"]
     steps:
