@@ -6,6 +6,7 @@ message CreateShippingRequest {
     string address = 1;
     int32 foo_bar = 2;
     int32 bla = 3;
+    int32 blaa = 4;
 }
 
 message CreateShippingResponse {
