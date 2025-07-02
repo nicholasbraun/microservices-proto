@@ -8,6 +8,7 @@ message CreatePaymentRequest {
     float total_price = 3;
     int64 something = 4;
     int64 something_else = 5;
+    int64 foo_bar = 6;
 }
 
 message CreatePaymentResponse {
