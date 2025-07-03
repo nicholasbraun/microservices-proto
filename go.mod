@@ -1,3 +1,3 @@
-module github.com/huseyinbabal/microservices-proto/golang/order
+module github.com/nicholasbraun/microservices-proto/golang/order
 
 go 1.24.2
