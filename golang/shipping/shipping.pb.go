@@ -24,9 +24,6 @@ const (
 type CreateShippingRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Address       string                 `protobuf:"bytes,1,opt,name=address,proto3" json:"address,omitempty"`
-	FooBar        int32                  `protobuf:"varint,2,opt,name=foo_bar,json=fooBar,proto3" json:"foo_bar,omitempty"`
-	Bla           int32                  `protobuf:"varint,3,opt,name=bla,proto3" json:"bla,omitempty"`
-	Blaa          int32                  `protobuf:"varint,4,opt,name=blaa,proto3" json:"blaa,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -66,27 +63,6 @@ func (x *CreateShippingRequest) GetAddress() string {
 		return x.Address
 	}
 	return ""
-}
-
-func (x *CreateShippingRequest) GetFooBar() int32 {
-	if x != nil {
-		return x.FooBar
-	}
-	return 0
-}
-
-func (x *CreateShippingRequest) GetBla() int32 {
-	if x != nil {
-		return x.Bla
-	}
-	return 0
-}
-
-func (x *CreateShippingRequest) GetBlaa() int32 {
-	if x != nil {
-		return x.Blaa
-	}
-	return 0
 }
 
 type CreateShippingResponse struct {
@@ -129,12 +105,9 @@ var File_shipping_shipping_proto protoreflect.FileDescriptor
 
 const file_shipping_shipping_proto_rawDesc = "" +
 	"\n" +
-	"\x17shipping/shipping.proto\"p\n" +
+	"\x17shipping/shipping.proto\"1\n" +
 	"\x15CreateShippingRequest\x12\x18\n" +
-	"\aaddress\x18\x01 \x01(\tR\aaddress\x12\x17\n" +
-	"\afoo_bar\x18\x02 \x01(\x05R\x06fooBar\x12\x10\n" +
-	"\x03bla\x18\x03 \x01(\x05R\x03bla\x12\x12\n" +
-	"\x04blaa\x18\x04 \x01(\x05R\x04blaa\"\x18\n" +
+	"\aaddress\x18\x01 \x01(\tR\aaddress\"\x18\n" +
 	"\x16CreateShippingResponse2G\n" +
 	"\bShipping\x12;\n" +
 	"\x06Create\x12\x16.CreateShippingRequest\x1a\x17.CreateShippingResponse\"\x00B6Z4github.com/huseyinbabal/microservices-proto/shippingb\x06proto3"
