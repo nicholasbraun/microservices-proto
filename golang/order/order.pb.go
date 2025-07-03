@@ -78,8 +78,6 @@ type OrderItem struct {
 	ProductCode   string                 `protobuf:"bytes,1,opt,name=product_code,json=productCode,proto3" json:"product_code,omitempty"`
 	UnitPrice     float32                `protobuf:"fixed32,2,opt,name=unit_price,json=unitPrice,proto3" json:"unit_price,omitempty"`
 	Quantity      int32                  `protobuf:"varint,3,opt,name=quantity,proto3" json:"quantity,omitempty"`
-	Foo           int32                  `protobuf:"varint,4,opt,name=foo,proto3" json:"foo,omitempty"`
-	Bla           int32                  `protobuf:"varint,5,opt,name=bla,proto3" json:"bla,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -131,20 +129,6 @@ func (x *OrderItem) GetUnitPrice() float32 {
 func (x *OrderItem) GetQuantity() int32 {
 	if x != nil {
 		return x.Quantity
-	}
-	return 0
-}
-
-func (x *OrderItem) GetFoo() int32 {
-	if x != nil {
-		return x.Foo
-	}
-	return 0
-}
-
-func (x *OrderItem) GetBla() int32 {
-	if x != nil {
-		return x.Bla
 	}
 	return 0
 }
@@ -298,14 +282,12 @@ const file_order_order_proto_rawDesc = "" +
 	"\auser_id\x18\x01 \x01(\x03R\x06userId\x12+\n" +
 	"\vorder_items\x18\x02 \x03(\v2\n" +
 	".OrderItemR\n" +
-	"orderItems\"\x8d\x01\n" +
+	"orderItems\"i\n" +
 	"\tOrderItem\x12!\n" +
 	"\fproduct_code\x18\x01 \x01(\tR\vproductCode\x12\x1d\n" +
 	"\n" +
 	"unit_price\x18\x02 \x01(\x02R\tunitPrice\x12\x1a\n" +
-	"\bquantity\x18\x03 \x01(\x05R\bquantity\x12\x10\n" +
-	"\x03foo\x18\x04 \x01(\x05R\x03foo\x12\x10\n" +
-	"\x03bla\x18\x05 \x01(\x05R\x03bla\"0\n" +
+	"\bquantity\x18\x03 \x01(\x05R\bquantity\"0\n" +
 	"\x13CreateOrderResponse\x12\x19\n" +
 	"\border_id\x18\x01 \x01(\x03R\aorderId\",\n" +
 	"\x0fGetOrderRequest\x12\x19\n" +
