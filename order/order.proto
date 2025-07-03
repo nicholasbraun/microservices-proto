@@ -11,9 +11,6 @@ message OrderItem {
     string product_code = 1;
     float unit_price = 2;
     int32 quantity = 3;
-    int32 foo = 4;
-    int32 bla = 5;
-    int32 huhu = 6;
 }
 
 message CreateOrderResponse {

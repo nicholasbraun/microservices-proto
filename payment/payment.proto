@@ -6,14 +6,6 @@ message CreatePaymentRequest {
     int64 user_id = 1;
     int64 order_id = 2;
     float total_price = 3;
-    int64 something = 4;
-    int64 something_else = 5;
-    int64 foo_bar = 6;
-    int64 baz = 7;
-    int64 hello_world = 8;
-    int64 asdf = 9;
-    int32 bla = 10;
-    int32 blub = 11;
 }
 
 message CreatePaymentResponse {
