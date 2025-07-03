@@ -26,14 +26,6 @@ type CreatePaymentRequest struct {
 	UserId        int64                  `protobuf:"varint,1,opt,name=user_id,json=userId,proto3" json:"user_id,omitempty"`
 	OrderId       int64                  `protobuf:"varint,2,opt,name=order_id,json=orderId,proto3" json:"order_id,omitempty"`
 	TotalPrice    float32                `protobuf:"fixed32,3,opt,name=total_price,json=totalPrice,proto3" json:"total_price,omitempty"`
-	Something     int64                  `protobuf:"varint,4,opt,name=something,proto3" json:"something,omitempty"`
-	SomethingElse int64                  `protobuf:"varint,5,opt,name=something_else,json=somethingElse,proto3" json:"something_else,omitempty"`
-	FooBar        int64                  `protobuf:"varint,6,opt,name=foo_bar,json=fooBar,proto3" json:"foo_bar,omitempty"`
-	Baz           int64                  `protobuf:"varint,7,opt,name=baz,proto3" json:"baz,omitempty"`
-	HelloWorld    int64                  `protobuf:"varint,8,opt,name=hello_world,json=helloWorld,proto3" json:"hello_world,omitempty"`
-	Asdf          int64                  `protobuf:"varint,9,opt,name=asdf,proto3" json:"asdf,omitempty"`
-	Bla           int32                  `protobuf:"varint,10,opt,name=bla,proto3" json:"bla,omitempty"`
-	Blub          int32                  `protobuf:"varint,11,opt,name=blub,proto3" json:"blub,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -85,62 +77,6 @@ func (x *CreatePaymentRequest) GetOrderId() int64 {
 func (x *CreatePaymentRequest) GetTotalPrice() float32 {
 	if x != nil {
 		return x.TotalPrice
-	}
-	return 0
-}
-
-func (x *CreatePaymentRequest) GetSomething() int64 {
-	if x != nil {
-		return x.Something
-	}
-	return 0
-}
-
-func (x *CreatePaymentRequest) GetSomethingElse() int64 {
-	if x != nil {
-		return x.SomethingElse
-	}
-	return 0
-}
-
-func (x *CreatePaymentRequest) GetFooBar() int64 {
-	if x != nil {
-		return x.FooBar
-	}
-	return 0
-}
-
-func (x *CreatePaymentRequest) GetBaz() int64 {
-	if x != nil {
-		return x.Baz
-	}
-	return 0
-}
-
-func (x *CreatePaymentRequest) GetHelloWorld() int64 {
-	if x != nil {
-		return x.HelloWorld
-	}
-	return 0
-}
-
-func (x *CreatePaymentRequest) GetAsdf() int64 {
-	if x != nil {
-		return x.Asdf
-	}
-	return 0
-}
-
-func (x *CreatePaymentRequest) GetBla() int32 {
-	if x != nil {
-		return x.Bla
-	}
-	return 0
-}
-
-func (x *CreatePaymentRequest) GetBlub() int32 {
-	if x != nil {
-		return x.Blub
 	}
 	return 0
 }
@@ -201,22 +137,12 @@ var File_payment_payment_proto protoreflect.FileDescriptor
 
 const file_payment_payment_proto_rawDesc = "" +
 	"\n" +
-	"\x15payment/payment.proto\"\xb6\x02\n" +
+	"\x15payment/payment.proto\"k\n" +
 	"\x14CreatePaymentRequest\x12\x17\n" +
 	"\auser_id\x18\x01 \x01(\x03R\x06userId\x12\x19\n" +
 	"\border_id\x18\x02 \x01(\x03R\aorderId\x12\x1f\n" +
 	"\vtotal_price\x18\x03 \x01(\x02R\n" +
-	"totalPrice\x12\x1c\n" +
-	"\tsomething\x18\x04 \x01(\x03R\tsomething\x12%\n" +
-	"\x0esomething_else\x18\x05 \x01(\x03R\rsomethingElse\x12\x17\n" +
-	"\afoo_bar\x18\x06 \x01(\x03R\x06fooBar\x12\x10\n" +
-	"\x03baz\x18\a \x01(\x03R\x03baz\x12\x1f\n" +
-	"\vhello_world\x18\b \x01(\x03R\n" +
-	"helloWorld\x12\x12\n" +
-	"\x04asdf\x18\t \x01(\x03R\x04asdf\x12\x10\n" +
-	"\x03bla\x18\n" +
-	" \x01(\x05R\x03bla\x12\x12\n" +
-	"\x04blub\x18\v \x01(\x05R\x04blub\"O\n" +
+	"totalPrice\"O\n" +
 	"\x15CreatePaymentResponse\x12\x1d\n" +
 	"\n" +
 	"payment_id\x18\x01 \x01(\x03R\tpaymentId\x12\x17\n" +
