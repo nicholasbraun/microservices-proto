@@ -299,7 +299,7 @@ const file_order_order_proto_rawDesc = "" +
 	"orderItems2l\n" +
 	"\x05Order\x125\n" +
 	"\x06Create\x12\x13.CreateOrderRequest\x1a\x14.CreateOrderResponse\"\x00\x12,\n" +
-	"\x03Get\x12\x10.GetOrderRequest\x1a\x11.GetOrderResponse\"\x00B3Z1github.com/huseyinbabal/microservices-proto/orderb\x06proto3"
+	"\x03Get\x12\x10.GetOrderRequest\x1a\x11.GetOrderResponse\"\x00B4Z2github.com/nicholasbraun/microservices-proto/orderb\x06proto3"
 
 var (
 	file_order_order_proto_rawDescOnce sync.Once
